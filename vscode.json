@@ -1,52 +1,64 @@
 {
-    "workbench.iconTheme": "vscode-icons",
-    "editor.fontFamily": "'MonacoB'",
-    "editor.fontSize": 18,
-    "editor.wordWrap": "on",
-    "window.menuBarVisibility": "default",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Material Theme",
+    "workbench.editor.tabSizing": "shrink",
     "workbench.statusBar.visible": true,
-    "window.zoomLevel": 0,
-    "editor.minimap.enabled": false,
-    "vsicons.projectDetection.autoReload": true,
-    "team.showWelcomeMessage": false,
     "workbench.startupEditor": "newUntitledFile",
-    "git.enabled": false,
-    "git.path": null,
-    "git.autofetch": false,
-    "html.format.enable": false,
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-    "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
-    "php.executablePath": "C:\\xampp\\php\\php.exe",
-    "php.validate.run": "onType",
-    "phpformatter.pharPath": "C:\\xampp\\htdocs\\php-cs-fixer-v2.phar",
-    "php-cs-fixer.executablePathWindows": "C:\\xampp\\htdocs\\php-cs-fixer-v2.phar",
-    "php-cs-fixer.formatHtml": true,
-    "php-cs-fixer.onsave": true,
-    "vetur.validation.template": true,
-    "editor.formatOnType": true,
+    "window.zoomLevel": 0,
+    "window.openFilesInNewWindow": "off",
+    "window.titleBarStyle": "custom",
+    "editor.fontFamily": "'Operator Mono'",
+    "editor.fontSize": 16,
+    "editor.lineHeight": 22,
+    "editor.wordWrap": "on",
     "editor.formatOnSave": true,
+    // Enable per-language
+    // "[javascript]": {
+    //     "editor.formatOnSave": false
+    // },
+    // "[scss]": {
+    //     "editor.formatOnSave": false
+    // },
+    // "[css]": {
+    //     "editor.formatOnSave": false
+    // },
+    "editor.minimap.enabled": false,
+    "editor.tabSize": 4,
+    "editor.autoIndent": true,
+    "editor.detectIndentation": false,
+    "editor.matchBrackets": true,
+    "editor.useTabStops": true,
+    "editor.formatOnPaste": true,
+    "editor.largeFileOptimizations": false,
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "files.insertFinalNewline": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 100,
+    "files.associations": {
+        "*.js": "javascriptreact",
+    },
+    "files.useExperimentalFileWatcher": false,
+    "explorer.openEditors.visible": 0,
+
+    "git.enabled": true,
+    "html.format.enable": false,
+    "vetur.validation.template": true,
     "vetur.format.defaultFormatter.html": "js-beautify-html",
-    "workbench.colorTheme": "Atom One Dark",
-    "java.home": "C:\\Program Files\\Java\\jdk-9.0.1",
+    "vetur.format.defaultFormatter.css": "prettier",
+    "vetur.format.defaultFormatter.js": "prettier",
+    "prettier.stylelintIntegration": true,
     "emmet.includeLanguages": {
         "blade": "html",
         "vue-html": "html"
     },
     "emmet.triggerExpansionOnTab": true,
-    "blade.format.enable": true,
+    "eslint.enable": true,
     "eslint._legacyModuleResolve": true,
     "eslint.alwaysShowStatus": true,
     "eslint.autoFixOnSave": true,
-    "vetur.format.defaultFormatter.css": "prettier",
-    "vetur.format.defaultFormatter.js": "prettier",
-    "eslint.enable": true,
     "eslint.options": {
-        "extensions": [
-            ".html",
-            ".js",
-            ".vue",
-            ".jsx"
-        ]
+        "extensions": [".html", ".js", ".vue", ".jsx"]
     },
     "eslint.validate": [{
             "language": "html",
@@ -65,5 +77,12 @@
             "autoFix": true
         }
     ],
-    "eslint.run": "onSave"
+    "eslint.run": "onSave",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "blade.format.enable": true,
+    "php-cs-fixer.onsave": true,
+    "php-cs-fixer.formatHtml": true,
+    "php-cs-fixer.executablePath": "php-cs-fixer",
+    "php.executablePath": "/usr/bin/php",
 }
